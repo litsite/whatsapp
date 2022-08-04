@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <!-- Coding by Litdesign | www.litsite.co.uk -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title> 
+    
+   
+    <!---- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!------------Google font Ubunty ---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,500;0,800;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!---- Boxicons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+</head>
+<body>
+<header>
+    <div class="left">
+        <i class='bx bx-arrow-back'></i>
+        <div class="chat-picture"></div>
+        <span id="chat-name">Bob</span>
+        <div id="switch-container">
+           <p>Switch Sender</p>
+            <label class="switch">
+              <input type="checkbox" id="toggle-sender">
+              <span class="slider round"></span>
+            </label>
+            
+        </div>
+    </div>
+    
+    <div class="right">
+        <i class='bx bxs-video'></i>
+        <i class='bx bxs-phone' ></i>
+        <i class='bx bx-dots-vertical-rounded'></i>
+        
+    </div>
+</header>
+<div id="header-overlay">
+    <i class='bx bx-arrow-back' id="close-header-overlay"></i>
+    <span style="margin-right: 50px">1</span>
+    <i class='bx bxs-share'></i>
+    <i class='bx bxs-star' ></i>
+    <i class='bx bxs-trash-alt' ></i>
+    <i class='bx bxs-send'></i>
+    <i class='bx bx-dots-vertical-rounded' ></i>
+</div>
+<main id="page-wrap">
+   <div class="chat-date"><span>TODAY</span></div>
+   
+    <div id="chat-box"></div>
+    
+    <div id="input-wrapper">
+        <form id="input-container">
+            <i class='bx bx-smile' ></i>
+            <input type="text" placeholder="Message" id="chat-input">
+            <i class='bx bx-paperclip' ></i>
+            <i class='bx bxs-camera' ></i>
+        </form>
+        <div id="voice-record">
+            <i class='bx bxs-microphone' ></i>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
